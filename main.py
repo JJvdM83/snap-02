@@ -18,7 +18,7 @@ def on_forever():
             basic.show_string("A")
             GameStarted = False
             Ascore += 1
-        if input.pin_is_pressed(TouchPin.P2):
+        elif input.pin_is_pressed(TouchPin.P2):
             basic.show_string("B")
             GameStarted = False
             Bscore += 1

@@ -1,6 +1,6 @@
-let GameStarted = false
-let Ascore = 0
 let Bscore = 0
+let Ascore = 0
+let GameStarted = false
 basic.showIcon(IconNames.Happy)
 music.play(music.builtinPlayableSoundEffect(soundExpression.hello), music.PlaybackMode.UntilDone)
 basic.clearScreen()
@@ -22,9 +22,9 @@ basic.forever(function () {
         }
     }
     basic.pause(1000)
-    basic.showString("A" + Ascore)
+    basic.showString("A" + ("" + Ascore))
     basic.pause(2000)
-    basic.showString("B" + Bscore)
+    basic.showString("B" + ("" + Bscore))
     basic.pause(2000)
     basic.clearScreen()
 })
